@@ -9,7 +9,4 @@ phases:
   post_build:
     commands:
     - echo "Entered the post-build phase"
-  cron: 
-  - name: "task1"
-    url: "/scheduled"
-    schedule: "* * * * *"
+ 
