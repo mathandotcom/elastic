@@ -1,5 +1,15 @@
-version: 1
-cron: 
+version: 0.2
+phases:
+  pre_build:
+    commands:
+    - echo "Entered the pre-build phase"
+  build:
+    commands:
+    - echo "Entered build phase"
+  post_build:
+    commands:
+    - echo "Entered the post-build phase"
+  cron: 
   - name: "task1"
     url: "/scheduled"
     schedule: "* * * * *"
